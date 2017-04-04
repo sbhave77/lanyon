@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: paperposts
 title: What's Jekyll?
 ---
 
