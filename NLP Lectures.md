@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: ML Lectures 
 ---
 
 <p class="message">

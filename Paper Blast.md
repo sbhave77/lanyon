@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: Paper Blast
 ---
 
 <p class="message">
