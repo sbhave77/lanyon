@@ -5,8 +5,8 @@ permalink:           pretty
 relative_permalinks: false
 
 # Setup
-title:               Shreyas's Blog
-tagline:             'Shreyas Bhave's Blog'
+title:               Shreyas Blog
+tagline:             'Shreyas Bhave Blog'
 description:         'A blog where I share my insights into politics, machine learning, and public health. Analyses of papers, articles, lectures. Explainer and opinion pieces on important issues.'
 url:                 http://lanyon.getpoole.com
 baseurl:             ''
