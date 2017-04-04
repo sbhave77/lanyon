@@ -8,7 +8,7 @@ relative_permalinks: false
 title:               Shreyas's Blog
 tagline:             'Shreyas Bhave's Blog'
 description:         'A blog where I share my insights into politics, machine learning, and public health. Analyses of papers, articles, lectures. Explainer and opinion pieces on important issues.'
-url:                 https://sbhave77.github.io/
+url:                 http://lanyon.getpoole.com
 baseurl:             ''
 paginate:            5
 
