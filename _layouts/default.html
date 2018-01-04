@@ -5,11 +5,33 @@
 
   <body>
 
-    {% include sidebar.html %}
+    <nav class="navbar navbar-defualt navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#categories-of-stuff" aria-expanded="false">
+            <a class="navbar-brand" href="#"> sabhave </a>
+            <span class="sr-only"> Toggle navigation </span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="collapse navbar-collapse" id="categories-of-stuff">
+      <ul class="nav navbar-nav navbar-right">
+        {% for p in site.pages %}
+        <li class="active"><a class="page-link" href="{{ p.url | prepend: site.baseurl }}"> {{ p.title }} </a>
+        {% endfor %}
+      </ul>
+    </div>
+
 
     <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
          content to avoid any CSS collisions with our real content. -->
-    <div class="wrap">
+
+    <!-- <div class="wrap">
       <div class="masthead">
         <div class="container">
           <h3 class="masthead-title">
@@ -22,11 +44,11 @@
       <div class="container content">
         {{ content }}
       </div>
-    </div>
+    </div> -->
 
-    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    <!-- <label for="sidebar-checkbox" class="sidebar-toggle"></label> -->
 
-    <script>
+    <!-- <script>
       (function(document) {
         var toggle = document.querySelector('.sidebar-toggle');
         var sidebar = document.querySelector('#sidebar');
@@ -42,6 +64,6 @@
           checkbox.checked = false;
         }, false);
       })(document);
-    </script>
+    </script> -->
   </body>
 </html>
