@@ -17,16 +17,16 @@
           </button>
         </div>
       </div>
+
+      <div class="collapse navbar-collapse" id="categories-of-stuff">
+        <ul class="nav navbar-nav navbar-right">
+          {% for p in site.pages %}
+          <li class="active"><a class="page-link" href="{{ p.url | prepend: site.baseurl }}"> {{ p.title }} </a></li>
+          {% endfor %}
+        </ul>
+      </div>
+
     </nav>
-
-    <div class="collapse navbar-collapse" id="categories-of-stuff">
-      <ul class="nav navbar-nav navbar-right">
-        {% for p in site.pages %}
-        <li class="active"><a class="page-link" href="{{ p.url | prepend: site.baseurl }}"> {{ p.title }} </a></li>
-        {% endfor %}
-      </ul>
-    </div>
-
 
     <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
          content to avoid any CSS collisions with our real content. -->
