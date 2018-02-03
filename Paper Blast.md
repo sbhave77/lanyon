@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Paper Blast
+title: Paper Rev
 ---
 
 <ul>

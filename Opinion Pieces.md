@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Opinion Pieces
+title: Opinion
 ---
 
 <ul>
