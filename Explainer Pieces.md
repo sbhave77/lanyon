@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Explainer Pieces
+title: Explainer
 ---
 
 <ul>
