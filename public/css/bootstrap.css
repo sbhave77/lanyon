@@ -3847,6 +3847,7 @@ tbody.collapse.show {
   flex-wrap: wrap;
   padding-left: 0;
   margin-bottom: 0;
+  margin-top: 25px;
   list-style: none;
 }
 
