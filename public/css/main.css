@@ -41,6 +41,20 @@ a:visited { color: #e65f00; }
   zoom: 1;
 }
 
+.container{
+    text-align:center;
+    
+    border:1px solid #666;
+}
+
+.img_links{
+    display:inline-block;
+    margin:5px 20px;
+    padding:5px;
+    
+    border:1px solid #CCC;
+}
+
 
 /* Layout Styles */
 /* ----------------------------------------------------------*/
