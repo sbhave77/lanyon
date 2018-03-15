@@ -43,16 +43,11 @@ a:visited { color: #e65f00; }
 
 .container{
     text-align:center;
-    
-    border:1px solid #666;
 }
 
 .img_links{
     display:inline-block;
-    margin:5px 20px;
-    padding:5px;
-    
-    border:1px solid #CCC;
+    margin:0px 15px;
 }
 
 
