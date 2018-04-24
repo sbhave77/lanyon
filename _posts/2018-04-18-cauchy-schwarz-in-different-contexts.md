@@ -18,4 +18,4 @@ $$
 
 Intuitively, the dot product is essentially a scalar measure of how much two vectors are in the same direction.
 
-![Geometric Dot Product Interpetation](./images/dot_product.svg)
+![Geometric Dot Product Interpetation](./images/dot_product.png)
