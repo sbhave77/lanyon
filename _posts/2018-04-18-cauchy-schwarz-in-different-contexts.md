@@ -4,7 +4,7 @@ title: Musings about dot products, cauchy-schwarz inequality and inner product s
 category: ep
 ---
 
-I was just recently working on understanding the relationship between $\beta$, $r$ and $r^2$ and this led me to get into the weeds of linear algebra including dot products, inner product spaces and the Cauchy-Schwarz inequality. This post outlines my review and renewed understanding of these topics.
+I was just recently working on understanding the relationship between $$\beta$$, $$r$$ and $$r^2$$ and this led me to get into the weeds of linear algebra including dot products, inner product spaces and the Cauchy-Schwarz inequality. This post outlines my review and renewed understanding of these topics.
 
 First of, what exactly is a dot product both mathematically and intuitively?
 
@@ -18,4 +18,4 @@ $$
 
 Intuitively, the dot product is essentially a scalar measure of how much two vectors are in the same direction.
 
-![Geometric Dot Product Interpetation](./images/dot_product.png)
+![Geometric Dot Product Interpretation](https://upload.wikimedia.org/wikipedia/commons/3/3e/Dot_Product.svg)
