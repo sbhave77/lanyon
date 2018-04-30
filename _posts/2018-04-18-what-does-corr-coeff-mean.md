@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Difference between slope, r and r^2 in computing Pearson and Spearman correlation
+title: Difference between $$\beta$$, $$r$$ and $$r^2$$ in computing Pearson and Spearman correlation
 category: ep
 ---
 
@@ -27,7 +27,7 @@ cov(\frac{X - \mu_x}{\sigma_x}, \frac{Y - \mu_y}{\sigma_y}) &= E[(\frac{X - \mu_
 \end{align*}
 $$
 
-Thus, we see that correlation is a scaled version of covariance. Using the Cauchy-Schwarz inequality, we can easily prove that correlation must, in fact, be between -1 and 1 as follows. For a closer look at this, see the tangential post I wrote about this! I must confess that while writing this post, I had somewhat of a linear algebra crisis about what it really means to take a dot product and why the definitions are the way they are, so I wrote a post for that separately!
+Thus, we see that correlation is a scaled version of covariance. Using the Cauchy-Schwarz inequality, we can easily prove that correlation must, in fact, be between -1 and 1 as follows. For a closer look at this, see the tangential [post](https://sbhave77.github.io/ep/2018/04/18/cauchy-schwarz-in-different-contexts/) I wrote about this! I must confess that while writing this post, I had somewhat of a linear algebra crisis about what it really means to take a dot product and why the definitions are the way they are, so I wrote a post for that separately!
 
 $$
 
