@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Difference between $$\beta$$, $$r$$ and $$r^2$$ in computing Pearson and Spearman correlation
+title: Difference between slope, r and r^2 in computing Pearson and Spearman correlation
 category: ep
 ---
 

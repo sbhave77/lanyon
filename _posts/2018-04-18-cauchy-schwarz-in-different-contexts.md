@@ -30,7 +30,7 @@ proj_{ab} &= ||a|| cos(\theta)
 \end{align*}
 $$
 
-Given this, the geometric definition just becomes $$ proj_{ab} * ||b|| $$
+Given this, the geometric definition just becomes $$proj_{ab} ||b||$$
 
 Thus:
 
@@ -42,8 +42,10 @@ This can be better understood by understanding each of the vectors in terms of a
 
 If we think about coordinate systems in linear algebra, we note that the following is true:
 
-$$ a = [a_1, a_2, \dots, a_n] = \sum_{i=1}^n a_i e_i$$
-$$ b = [b_1, b_2, \dots, b_n] = \sum_{i=1}^n b_i e_i$$
+$$
+a = [a_1, a_2, \dots, a_n] = \sum_{i=1}^n a_i e_i \\
+b = [b_1, b_2, \dots, b_n] = \sum_{i=1}^n b_i e_i
+$$
 
 where $$e_i$$ represent standard basis vectors.
 
@@ -81,7 +83,7 @@ $$\langle X,Y \rangle := E[XY]$$
 
 This follows the three axioms:
 
-1. E[XY] = E[YX]
+1. $$ E[XY] = E[YX] $$
 2. $$\langle aX, Y \rangle = E[aXY] = a E[XY]$$
    $$\langle X, Y + Z \rangle = E[X(Y + Z)] = E[XY + XZ] = E[XY] + E[XZ]$$      
 3. $$ \langle X, X \rangle = E[X^2] = Var(X) + (E[X])^2 \geq 0$$
@@ -120,6 +122,4 @@ $$
 
 Thus, the covariance of X and Y is less than or equal to the product of the standard deviations of X and Y. Intuitively this makes some sense because covariance can be thought of as the average of the product of the deviation of X and Y from their respective means. You might expect that the maximum of the covariance to be the straight product of the two standard deviations (a perfect linear relationship).
 
-This has implications when understanding why correlations must be bounded between 1 and -1 which is explored more in this [post](https://sbhave77.github.io/ep/2018/04/18/what-does-corr-coeff-mean/). 
-
-\end{align*}
+This has implications when understanding why correlations must be bounded between 1 and -1 which is explored more in this [post](https://sbhave77.github.io/ep/2018/04/18/what-does-corr-coeff-mean/).
