@@ -19,7 +19,7 @@ $$
 
 Intuitively, the dot product is essentially a scalar measure of how much two vectors are in the same direction.
 
-![Geometric Dot Product Interpretation](https://upload.wikimedia.org/wikipedia/commons/3/3e/Dot_Product.svg)
+![Geometric Dot Product Interpretation](https://upload.wikimedia.org/wikipedia/commons/3/3e/Dot_Product.svg "Geometric Dot Product")
 
 Looking at the figure above, we can see that the projection of a onto b is basically $$||a|| cos(\theta)$$ by simple trigonometric rules.
 
