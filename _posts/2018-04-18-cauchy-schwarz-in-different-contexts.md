@@ -21,7 +21,7 @@ Intuitively, the dot product is essentially a scalar measure of how much two vec
 
 ![Geometric Dot Product Interpretation](https://upload.wikimedia.org/wikipedia/commons/3/3e/Dot_Product.svg "Geometric Dot Product")
 
-Looking at the figure above, we can see that the projection of a onto b is basically $$||a|| cos(\theta)$$ by simple trigonometric rules.
+Looking at the figure above, we can see that the projection of a onto b is basically derived as follows:
 
 $$
 \begin{align*}
@@ -30,9 +30,15 @@ proj_{ab} &= ||a|| cos(\theta)
 \end{align*}
 $$
 
-Given this, the geometric definition just becomes $$proj_{ab} ||b||$$
+Given this, the geometric definition just becomes:
 
-Thus:
+$$
+||a|| ||b|| cos(\theta) = proj_{ab} ||b||
+$$
+
+This means that the dot product is basically multiplying the norm of b and the norm of the component of a in the direction of b.
+
+Also, as a result of cos function being between -1 and 1:
 
 $$ -||a||||b|| \leq a \cdot b \leq ||a|| ||b|| $$
 
@@ -84,10 +90,10 @@ $$\langle X,Y \rangle := E[XY]$$
 This follows the three axioms:
 
 1. $$ E[XY] = E[YX] $$
-2. $$\langle aX, Y \rangle = E[aXY] = a E[XY]$$
-   $$\langle X, Y + Z \rangle = E[X(Y + Z)] = E[XY + XZ] = E[XY] + E[XZ]$$      
-3. $$ \langle X, X \rangle = E[X^2] = Var(X) + (E[X])^2 \geq 0$$
-   $$ \langle X, X \rangle = 0 \iff X = 0 $$
+2. $$\langle aX, Y \rangle = E[aXY] = a E[XY] \\
+   \langle X, Y + Z \rangle = E[X(Y + Z)] = E[XY + XZ] = E[XY] + E[XZ]$$      
+3. $$ \langle X, X \rangle = E[X^2] = Var(X) + (E[X])^2 \geq 0 \\
+   \langle X, X \rangle = 0 \iff X = 0 $$
 
    The iff statement is true because if the inner product of X with itself is 0, this means the variance and the mean are 0 which means by definition the random variable must be a vector of 0.
 
