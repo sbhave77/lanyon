@@ -27,13 +27,27 @@ cov(\frac{X - \mu_x}{\sigma_x}, \frac{Y - \mu_y}{\sigma_y}) &= E[(\frac{X - \mu_
 \end{align*}
 $$
 
-Thus, we see that correlation is a scaled version of covariance. Using the Cauchy-Schwarz inequality, we can easily prove that correlation must, in fact, be between -1 and 1 as follows. For a closer look at this, see the tangential [post](https://sbhave77.github.io/ep/2018/04/18/cauchy-schwarz-in-different-contexts/) I wrote about this! I must confess that while writing this post, I had somewhat of a linear algebra crisis about what it really means to take a dot product and why the definitions are the way they are, so I wrote a post for that separately!
-
-$$
-
-
-$$
+Thus, we see that correlation is a scaled version of covariance. Using the Cauchy-Schwarz inequality, we can easily prove that correlation must, in fact, be between -1 and 1 as follows. The basic idea is that we can upper bound the covariance of two random variables by the product of their standard deviations. For a closer look at this, see this [post](https://sbhave77.github.io/ep/2018/04/18/cauchy-schwarz-in-different-contexts/) I wrote!
 
 Ok, this seems to make sense. Basically, the idea is to scale the variables so if they are measured in different units, or their ranges are wildly different we can account for that and then take the resulting covariance.
 
-Now, back to linear regression.
+Another way of thinking about this is to simply transform X and Y.
+
+$$
+X' = \frac{X - \mu_x}{\sigma_x} \\
+Y' = \frac{Y - \mu_y}{\sigma_y} \\
+
+\begin{align*}
+cov(X',Y') &= E[(X' - \mu_{x'})(Y' - \mu_{y'})] \\
+&= E[X'Y'] - E[X']E[Y'] \\
+&= E[X'Y']
+\end{align*}
+$$
+
+Thus, taking the correlation is the same as standardizing the random variables and in the context of a sampling of n points $$ {(x_i,y_i)}^n $$ and graphing them on a plot and then subsequently taking the sample correlation by finding the average of the product of the samples as follows:
+
+$$
+r = \frac{1}{n-1} \sum_{i=1}^n (\frac{x_i - \bar{x}}{s_x})(\frac{y_i - \bar{y}}{s_y})
+$$
+
+I find this a useful way to think about this visually.
